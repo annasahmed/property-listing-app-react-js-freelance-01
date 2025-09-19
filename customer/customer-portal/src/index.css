@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+	--color-primary-color: #16445b;
+	--color-secondary-color: #ed3479;
+	--color-border-color: #e5e7eb;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+button,
+a {
+	cursor: pointer;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
