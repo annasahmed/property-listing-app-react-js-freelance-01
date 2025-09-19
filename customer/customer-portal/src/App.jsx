@@ -5,6 +5,7 @@ import "./index.css";
 import Enquiries from "./pages/Enquiries";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/search" element={<Search />} />
 						<Route path="/inquiries" element={<Enquiries />} />
+						<Route path="/*" element={<ComingSoon />} />
 					</Routes>
 				</Layout>
 			</Router>
